@@ -8,8 +8,8 @@ describe("Retailer", function(){
         const retailer = await retailerFactory.deploy();
         await retailer.deployed();
 
-        const deployed_address = await retailer.address();
-        console.log(`address is deployed at {address}`); 
-        expect(deployed_address).is.not.empty();
+        const deployed_address = await retailer.address;
+        console.log(deployed_address); 
+        expect(deployed_address).is.not.empty;
     });
 });
