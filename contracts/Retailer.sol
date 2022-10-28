@@ -60,6 +60,10 @@ contract Retailer {
         emit RefundSent(p.id, p.amount);
     }
 
+    function getPaymentInfo(bytes32 id) external view returns (Payment memory) {
+        return payments[id];
+    }
+
     modifier onlySeller(bytes32 id) {
         // check that payment exists
         // check that msg.sender is the seller
