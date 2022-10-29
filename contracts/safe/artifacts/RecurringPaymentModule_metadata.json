@@ -581,7 +581,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity-contracts/contracts/safe/RecurringPaymentModule.sol": "RecurringPaymentModule"
+			"contracts/safe/RecurringPaymentModule.sol": "RecurringPaymentModule"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -659,7 +659,7 @@
 				"dweb:/ipfs/QmQJquTMtc6fgm5JQzGdsGpA2fqBe3MHWEdt2qzaLySMdN"
 			]
 		},
-		"solidity-contracts/contracts/safe/RecurringPaymentModule.sol": {
+		"contracts/safe/RecurringPaymentModule.sol": {
 			"keccak256": "0x0b36b8a5d2168360c5c171fba2e0b3d440d2f6d1b1a30574f0603521830ea6d1",
 			"license": "MIT",
 			"urls": [
@@ -667,7 +667,7 @@
 				"dweb:/ipfs/QmfGLwjaxxbXS9puroWxqoJoJJj24HZ5HGmWWQC4PJe8by"
 			]
 		},
-		"solidity-contracts/contracts/utils/DateTime.sol": {
+		"contracts/utils/DateTime.sol": {
 			"keccak256": "0xfdb7e180151ad5ae15703e63e51bab45d966a50926fbb53831e63abdc64f6ecb",
 			"license": "MIT",
 			"urls": [

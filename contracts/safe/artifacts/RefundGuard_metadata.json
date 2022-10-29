@@ -146,7 +146,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity-contracts/contracts/safe/RefundGuard.sol": "RefundGuard"
+			"contracts/safe/RefundGuard.sol": "RefundGuard"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -288,7 +288,7 @@
 				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
 			]
 		},
-		"solidity-contracts/contracts/safe/RefundGuard.sol": {
+		"contracts/safe/RefundGuard.sol": {
 			"keccak256": "0x0de09d46fa7516d08d54c63ad6c4916e54c15d6b7a6e9664475df83096bc0c71",
 			"license": "MIT",
 			"urls": [

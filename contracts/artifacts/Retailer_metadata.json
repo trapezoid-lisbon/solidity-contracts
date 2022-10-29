@@ -149,7 +149,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity-contracts/contracts/Retailer.sol": "Retailer"
+			"contracts/Retailer.sol": "Retailer"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -171,12 +171,12 @@
 				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
 			]
 		},
-		"solidity-contracts/contracts/Retailer.sol": {
-			"keccak256": "0x59a91dd85fce9d4c634ed64035cedfbebf042db5802ae8ef7dd8a9665c59e9d0",
+		"contracts/Retailer.sol": {
+			"keccak256": "0x0e2e45ecec0e1d759a62600baf48f08a64be64ebc655773226baa06b25827b51",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3319103753a6f96b4e53c162cc7f7b54e2bd4f1063bccd4fa6fb7037885b9835",
-				"dweb:/ipfs/QmcavvCs98fecq3oJ9AmvJ7PsrQ4DMjcXFFxFj24fBbzKB"
+				"bzz-raw://9983ee3a9265d057b7f469411aee1af3615618d074328e23e7d32a45e31c2fd9",
+				"dweb:/ipfs/Qmc9w58Gtmb1wrESJPvWWpjkq3szPwjV1zGzUFu6DRHuXv"
 			]
 		}
 	},
