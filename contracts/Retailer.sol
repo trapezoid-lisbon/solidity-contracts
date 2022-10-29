@@ -2,7 +2,9 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-
+contract FallbackHandler {
+    fallback() external {}
+}
 contract Retailer {
 
     struct Payment {
@@ -53,11 +55,15 @@ contract Retailer {
             require(success, "Failed to send ERC-20 Token");
         }
 
-        p.refunded = false;
+        p.refunded = true;
         payments[id] = p;
         
         //emit event
         emit RefundSent(p.id, p.amount);
+    }
+
+    function getPaymentInfo(bytes32 id) external view returns (Payment memory) {
+        return payments[id];
     }
 
     modifier onlySeller(bytes32 id) {
