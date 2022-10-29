@@ -1,0 +1,75 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50604780601d6000396000f3fe6080604052348015600f57600080fd5b00fea26469706673582212206e4330d3ed26a309f16dc8c8c9f8ae08b0d0f954435b7517bafcdc134f836ea464736f6c63430008110033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x47 DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH15 0x4330D3ED26A309F16DC8C8C9F8AE08 0xB0 0xD0 0xF9 SLOAD NUMBER JUMPDEST PUSH22 0x17BAFCDC134F836EA464736F6C634300081100330000 ",
+			"sourceMap": "118:55:1:-:0;;;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {
+				"@_84": {
+					"entryPoint": null,
+					"id": 84,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b00fea26469706673582212206e4330d3ed26a309f16dc8c8c9f8ae08b0d0f954435b7517bafcdc134f836ea464736f6c63430008110033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH15 0x4330D3ED26A309F16DC8C8C9F8AE08 0xB0 0xD0 0xF9 SLOAD NUMBER JUMPDEST PUSH22 0x17BAFCDC134F836EA464736F6C634300081100330000 ",
+			"sourceMap": "118:55:1:-:0;;;;;;;;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "14200",
+				"executionCost": "69",
+				"totalCost": "14269"
+			},
+			"external": {
+				"": "45"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"stateMutability": "nonpayable",
+			"type": "fallback"
+		}
+	]
+}

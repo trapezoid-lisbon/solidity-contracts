@@ -1,0 +1,238 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "getPaymentInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "id",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "seller",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "buyer",
+								"type": "address"
+							},
+							{
+								"internalType": "contract IERC20",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "refunded",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct IRetailer.Payment",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "refund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity-contracts/contracts/safe/RefundGuard.sol": "IRetailer"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@gnosis.pm/safe-contracts/contracts/GnosisSafe.sol": {
+			"keccak256": "0x2ca9e3e053c969b9364f62c50c2c25b92525db7fd0bad3ae1fb0c20dd575367c",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://ef1bceac49ae93b31aec41380862fdc267823c41e2dfefb9b7d70d0996e858e1",
+				"dweb:/ipfs/QmWFU5bic2CGv8QgQ8bxJnjMfuJgNL2zZubt5hvzhcRZPc"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/base/Executor.sol": {
+			"keccak256": "0x4d3a900673473466bc27413fdbb11aae60b5580b792c49411f01544e0b24fe08",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://71ada0590998f47d1ee9759aa190c82d4b348d59a2f582747650d9720245a309",
+				"dweb:/ipfs/Qmb9UudLoJpPutHVP9pXd1poP5CqFf5sxVFuYw14SYfRFk"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/base/FallbackManager.sol": {
+			"keccak256": "0x1be9f0f3e80a78134c2e3a026c6a14759785bd35d135e87a4a025aeb6742791f",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://44130f09921e895c0b9d7797de1d64940a8c43391efcda3a0208cb9ad96475a7",
+				"dweb:/ipfs/QmUur4hzvCJ68PnW6zQFpemAMH2DH5mExPqSZdpKeY1ZRN"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/base/GuardManager.sol": {
+			"keccak256": "0x53a532a31f9632d5a73ad0df56f05bd2b66a2f781f571eb48d00367d370707f9",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://eebc15cb7c83cf9516514b34bd16fb19c08104c738fa172ae3c98c66b84708ed",
+				"dweb:/ipfs/QmfJ4yX5WwHU58QVoxJFaejyerscTs6VCgn2TdUVrEZeTP"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/base/ModuleManager.sol": {
+			"keccak256": "0x5512760a0328309f82a71cbe2ac14e0942501b9d44d5fb417bd02174546672e5",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://763cf803a98a921d62ed51d7876a13aed63968c828f026ce2beb747d2631c0bc",
+				"dweb:/ipfs/QmbHZoYsbkxC2kVCs4pQ4nRaFrcgU5X8FuLX7vV3qDR9Y5"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/base/OwnerManager.sol": {
+			"keccak256": "0x01a3d64cc0967f42ae63802409f5404d18352516ea2a6335005003d919ffcf12",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://91824103f2966612103705d6493290e193b0c0ca2bbe7141965184435dbb999b",
+				"dweb:/ipfs/Qmd7u917v4DnD4hvQGAGbchVJ8A7pm1UCzCv7sAzQnRoi4"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/common/Enum.sol": {
+			"keccak256": "0x473e45b1a5cc47be494b0e123c9127f0c11c1e0992a321ae5a644c0bfdb2c14f",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://948e6d5a8bd7377f7795b6e28584eab9be5c0a8db240bf5e606744a175238c3d",
+				"dweb:/ipfs/QmQQaUmQfpuejV41jbxKSTgEBYYCcVTjCsDMgf2htgz6ej"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/common/EtherPaymentFallback.sol": {
+			"keccak256": "0x1a7928d29877da84a3d0df846d5cd933d48ee095c1bde0aa044e249b12e27a72",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://962fc098cfdd8a43cc7d294c1105718ea985cacf1172ea0426f7370e2096b830",
+				"dweb:/ipfs/QmdZrxJ7dSWuTjbrN133YiRDLwYQr21zLr3CqWWtowY9Gu"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/common/SecuredTokenTransfer.sol": {
+			"keccak256": "0x178682d8477da42936c7e8e24d39094c4ac08ecd8623794b9535d77001b665f1",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://2ae8a6d5c7d4cc19c3b957c8857e87e92a4570effebf32ba54184c2b8375a0a2",
+				"dweb:/ipfs/QmVNgRcRVgQZriJm8KVXQvRbHQf74wH7ABmBNTjBTqBa8r"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/common/SelfAuthorized.sol": {
+			"keccak256": "0x59d36efca578b75541a776f62a0d0ef03712fc27b6647c3915c14b572106d7bc",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://8530c6e0392415d42486847cd4368d30f6cac42051596330692a571fcdbb9e29",
+				"dweb:/ipfs/QmWw51Pshw5t2sMKANzxtfNdBSQUyQQpfTr3Mi7oNJGk7U"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/common/SignatureDecoder.sol": {
+			"keccak256": "0x2d37be182472ccfee62a33e9939f9b3d509be4c32e9fdebc2c1746c573655987",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://f76d96f10640beee7d4b4ad119bd3c64aeb26929011d9c1eec738c63ebc92f63",
+				"dweb:/ipfs/QmaqgDocQumKeyUMgZU7STzpTASQjDbUxbQKuZ17xhLaXz"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/common/Singleton.sol": {
+			"keccak256": "0x6e02c18998de8834dd7d69890cb6ede996b6f635d2337081a596d91e35e2c648",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://ce1dfe9f820352b6f95b350ac0b3fa8afc24ad77bffffc2c9e00462e2a41a666",
+				"dweb:/ipfs/QmVr2dCUbNbg5e7UsgngGij5mybgkXcbf5e5cPhT21aFXA"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/common/StorageAccessible.sol": {
+			"keccak256": "0x36853adb266c2ab7d3c612aca799441a86bd15d9e1d24fc6c70d63f5c2df3aaf",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://3f210f47e032444049040d2929b32e02089aac1d05b07dcd77ee34bb63505dfa",
+				"dweb:/ipfs/QmbE8GXFAbthieTL51S2XPF5URyPaj1tDubVuhztkSoiPo"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/external/GnosisSafeMath.sol": {
+			"keccak256": "0x2a2b4d74f5834a9437be0cd3254d7a676698fc78aa47941c2009470196998d98",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://ea04449ba8b78ec44f3463b68cbce971875626e91d028add50900c41101a1156",
+				"dweb:/ipfs/QmR95ci4HVkJuyYGvYRHVpp6N3wefu5WVDhipKwRechWV6"
+			]
+		},
+		"@gnosis.pm/safe-contracts/contracts/interfaces/ISignatureValidator.sol": {
+			"keccak256": "0x5b6e9bf17f28738ce88e751f420b0559f5151ba7bec2ff3c7bb31e42673d6801",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://bfdde8390deb619e38f98be67c5f9d26f12623855540af76b9f454142d3896c1",
+				"dweb:/ipfs/QmZrr1ocToR5S62W177qV2csfs7wCQNs3t9vatyx32uLXz"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"solidity-contracts/contracts/safe/RefundGuard.sol": {
+			"keccak256": "0x0de09d46fa7516d08d54c63ad6c4916e54c15d6b7a6e9664475df83096bc0c71",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5424d031598b17f60628d07906c043f381df06f31e69e9e985a9d10121d237c9",
+				"dweb:/ipfs/QmNa6d9XBaF8y9zFmjHWDo3MVdYT7eew8UBCdsdVyohBbv"
+			]
+		}
+	},
+	"version": 1
+}

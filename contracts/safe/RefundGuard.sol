@@ -24,12 +24,17 @@ interface IRetailer {
 contract RefundGuard is Guard {
     IRetailer retailer;
 
-    constructor(IRetailer _retailer) {
+    bytes4 public refundFunctionSelector = 0x7249fbb6;
+
+    address public safe;
+
+    constructor(IRetailer _retailer, address _safe) {
         retailer = _retailer;
+        safe = _safe;
     }
 
     function checkTransaction(
-        address to,
+        address /*to*/,
         uint256 /* value */,
         bytes memory data,
         Enum.Operation /* operation */,
@@ -42,17 +47,16 @@ contract RefundGuard is Guard {
         address /* msgSender */
     ) external view override {
         bytes4 functionSelector = bytes4(accessBytes(data, 0, 4));
-        if (functionSelector != IRetailer.refund.selector) {
+        if (functionSelector != refundFunctionSelector) {
             return;
         }
 
-        require(to == address(retailer), "Invalid retailer address.");
-        // get payment id from calldata
         bytes32 paymentId = bytes32(accessBytes(data, 4, 36));
+
         IRetailer.Payment memory p = retailer.getPaymentInfo(paymentId);
         require(p.id != 0, "This payment doesn't exist.");
-        require(p.refunded == false, "This payment is already refunded.");
-        require(p.seller == address(this), "This payment was not made for this gnosis safe.");
+        require(p.seller == safe, "Invalid seller.");
+        require(p.refunded == false, "Already refunded.");
     }
 
     function checkAfterExecution(bytes32 txHash, bool success) external {}
