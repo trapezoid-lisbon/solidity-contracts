@@ -23,7 +23,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"solidity-contracts/contracts/Retailer.sol": "FallbackHandler"
+			"contracts/Retailer.sol": "FallbackHandler"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -45,12 +45,12 @@
 				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
 			]
 		},
-		"solidity-contracts/contracts/Retailer.sol": {
-			"keccak256": "0x59a91dd85fce9d4c634ed64035cedfbebf042db5802ae8ef7dd8a9665c59e9d0",
+		"contracts/Retailer.sol": {
+			"keccak256": "0x5b72db64594b677994fdcda4d3a831c8597ae66f0dc5546305554c145ecee5ea",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3319103753a6f96b4e53c162cc7f7b54e2bd4f1063bccd4fa6fb7037885b9835",
-				"dweb:/ipfs/QmcavvCs98fecq3oJ9AmvJ7PsrQ4DMjcXFFxFj24fBbzKB"
+				"bzz-raw://96e38b02b10039b268f383ad564a8cb1924d98fc5d518e12c3e0a37cb7117d92",
+				"dweb:/ipfs/QmU9wQCrdZ5FQMLiYRXb8tDKaCunuxaiHaZJnVHtKQBeiA"
 			]
 		}
 	},
