@@ -29,6 +29,7 @@ contract Retailer {
             // it's an eth transaction
             (bool success, ) = seller.call{value: msg.value}("");
             require(success, "Failed to send Ether");
+            amount = msg.value;
         } else {
             // it's not eth
             bool success = token.transferFrom(msg.sender, seller, amount);
